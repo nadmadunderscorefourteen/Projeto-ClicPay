@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClicPay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="resetStyle.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    
+    <header class="cabecalho">
+        <div class="container">
+            <figure class="cabecalho__logoClicpay">
+                <img src="/assets/logo.svg" alt="Logo ClicPay">
+            </figure>
+        </div>
+    </header>
+
+    <main>
+        <section class="secaoDetalhesConta">
+
+         <div class="container">  
+
+            <div class="secaoDetalhesConta__sobreUsuario">
+                
+               <div class="secaoDetalhesConta__sobreUsuario--apresentacao">
+                <img src="/assets/profileuser.svg" alt="Imagem do usuário">
+                <p>Olá, <strong>@joana</strong></p> 
+               </div> 
+                
+                <div class="secaoDetalhesConta__sobreUsuario--icones">
+                    <img src="/assets/giftinho.svg" alt="Ícone de presente">
+                    <img src="/assets/chat0.svg" alt="Ícone balão de diálogo">
+                </div>
+            </div>
+            
+            <div class="secaoDetalhesConta__sobreSaldo">
+                <div>
+                    <p>Saldo ClicPay</p>
+                    <div class="secaoDetalhesConta__sobreSaldo--valor">
+                        <p>R$ 500,00</p>
+                        <img src="/assets/yee.png" alt="Ícone de olho">
+                    </div>
+                </div>
+                <button>Extrato</button>
+            </div>
+            
+            <ul class="secaoDetalhesConta__opcoesTransacoes">
+               
+                <li class="secaoDetalhesConta__itemTransacao secaoDetalhesConta__itemTransacao--qrCode"
+                 id="1">
+                    <figure>
+                        <img src="/assets/qr-code.png" alt="Ìcone QR Code">
+                    </figure>
+                    <p>QR Code</p>
+                </li>
+                
+                <li class="secaoDetalhesConta__itemTransacao secaoDetalhesConta__itemTransacao--pix"
+                 id="2">
+                   <figure>
+                        <img src="/assets/whitepix.png" alt="Ícone Pix">
+                    </figure>
+                    <p>Pix</p>
+                </li>
+                
+                <li class="secaoDetalhesConta__itemTransacao secaoDetalhesConta__itemTransacao--boleto"
+                 id="3">
+                    <figure>
+                        <img src="/assets/scanboleto.png" alt="Ícone Boleto">
+                    </figure>
+                    <p>Pagar Boleto</p>
+                </li>
+                
+                <li class="secaoDetalhesConta__itemTransacao secaoDetalhesConta__itemTransacao--cobrar"
+                 id="4">
+                    <figure>
+                        <img src="/assets/whiteCobrar.png" alt="Ícone Cobrar">
+                    </figure>
+                    <p>Cobrar</p>
+                </li>
+            </ul>
+        </div>
+        </section>
+    
+        <section class="secaoTransacao">
+
+            <div class="container">
+
+                <div class="secaoTransacao__avisoSelecao mostrar">
+                    <p>Selecione a forma de pagamento</p>
+                    <img src="/assets/banner.svg" alt="Banner do ClicPay">
+                </div>
+
+                <div data-id="1" class="secaoTransacao__qrCode">
+                    <img src="/assets/QRCode_Fácil.png" alt="Imagem QR Code">
+                    <p>@joana</p>
+                    <button>Cobre um amigo</button>
+                    <a href="">Compartilhar meu código</a>
+                </div>
+                
+                <div data-id="2" class="secaoTransacao__pix">
+                    
+                    <img src="/assets/pix-logo.png" alt="Logo pix">
+                    <div class="secaoTransacao__boxOpcao">
+                        <img src="/assets/up.png" alt="Ícone opção pix">
+                        <p>Envie por CPF/CNPJ, telefone, 
+                        e-mail ou chave aleatória</p>
+                    </div>
+                    <div class="secaoTransacao__boxOpcao">
+                        <img src="/assets/double.png" alt="Ícone opção pix">
+                        <p>Insira um código Pix copia e cola
+                        para enviar um pagamento</p>
+                    </div>
+                </div>
+                
+                <div data-id="3" class="secaoTransacao__boleto">
+                    <img src="/assets/boleto1.png" alt="Imagem boleto">
+                    <h2>Pagar com código de barras</h2>
+                    <p>Você pode parcelar em até 12x no cartão
+                    saldo em carteira para pagar à vista.
+                    </p>
+                    <input type="text" placeholder=
+                    "Insira o código de barras">
+                </div>
+
+                <div data-id="4" class="secaoTransacao__cobrar">
+                    <img src="/assets/handcobrar.png" alt="Ícone cobrar">
+                    <h2>Cobrar</h2>
+                    <p>Divida a conta com os amigos de forma
+                     fácil!</p>
+                    <div class="secaoTransacao__boxOpcao">
+                        <img src="" alt="Logo ClicPay">
+                        <p><strong>Amigos do ClicPay</strong> <br>
+                        Divida e acompanhe um gasto com pessoas
+                        por aqui</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <footer class="rodape"> 
+            <div class="container">
+                
+                <ul class="rodape__menuPrincipal">
+                    <li class="rodape__menuItem">
+                        <a href="#">
+                            <img src="/assets/house.svg" alt="Ícone início">
+                            <p>Início</p>
+                        </a>
+                    </li>
+
+                    <li class="rodape__menuItem">
+                        <a href="#">
+                            <img src="/assets/walllet.svg" alt="Ícone carteira">
+                            <p>Carteira</p>
+                        </a>
+                    </li>
+
+                    <li class="rodape__menuItem rodape__menuItem--pagar">
+                        <a href="#">
+                            <img src="/assets/money.svg" alt="Ícone pagar">
+                            <p>Pagar</p>
+                        </a>
+                    </li>
+
+                    <li class="rodape__menuItem">
+                        <a href="#">
+                            <img src="/assets/noti.svg" alt="Ícone notificacao">
+                            <p>Notificações</p>
+                        </a>
+                    </li>
+
+                    <li class="rodape__menuItem">
+                        <a href="#">
+                            <img src="/assets/stoore.svg" alt="Ícone bolsa">
+                            <p>Loja</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
