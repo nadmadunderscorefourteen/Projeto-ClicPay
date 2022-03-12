@@ -139,7 +139,7 @@ body{
 
 .secaoDetalhesConta__itemTransacao{}
 
-    /* Hover */
+    /* Inicio do hover */
 .secaoDetalhesConta__itemTransacao:hover{
     background-color: white;
     color: #048ABF;
@@ -164,14 +164,14 @@ body{
 .secaoDetalhesConta__itemTransacao--boleto figure{
     background-image: url("/assets/scanboleto.png");
     width: 100%;
-    max-width: 73px;
-    max-height: 50px;
+    max-width: 63px;
+    max-height: 43px;
 }
 
 .secaoDetalhesConta__itemTransacao--cobrar figure{
     background-image: url("/assets/whiteCobrar.png");
     width: 100%;
-    max-width: 60px;
+    max-width: 57px;
     max-height: 56px;
 }
 
@@ -216,7 +216,7 @@ body{
 
 
 .secaoTransacao__avisoSelecao p{
-    font-size: 25px;
+    font-size: 22px;
     box-shadow: 2px 2px 4px #CDC5BF;
     padding: 30px 60px;
     border-radius: 10px;
@@ -267,7 +267,7 @@ body{
 .secaoTransacao__pix img{
     width: 100%;
     max-width: 200px;
-    margin: 30px 0 0 20px;
+    margin: 30px 0 15px 5px;
 }
 
 .secaoTransacao__boxOpcao{
@@ -283,7 +283,6 @@ body{
 
 .secaoTransacao__boxOpcao img{
     width: 100%;
-    max-width: 80px;
     margin-right: 10px;
 }
 
@@ -341,12 +340,20 @@ body{
     margin: 20px 0;
 }
 
+.secaoTransacao__cobrar strong{
+    font-weight: 600;
+}
+
 .secaoTransacao__boxOpcao img{
     max-width: 25px;
 }
 
+.secaoTransacao__cobrar .secaoTransacao__boxOpcao img{
+    max-width: 49px;
+  }
+
 .secaoTransacao__cobrar .secaoTransacao__boxOpcao p{
-     margin-left: 10px;
+   /*  margin-left: 10px;   voltar a exibir depois de melhorar a solucao no js  */
 }
 
 .rodape{
